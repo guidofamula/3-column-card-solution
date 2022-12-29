@@ -9,10 +9,10 @@
 
 <div align="center">
   <h3>
-    <a href="#" target='_blank' color="white">
+    <a href="https://www.frontendmentor.io/solutions/3column-preview-card-component-ePiXk_mT3R" target='_blank' color="white">
       Solution URL
     </a>
-  <span> ~||~ </span>    <a target='_blank' href="#">
+  <span> ~||~ </span>    <a target='_blank' href="https://guidofamula.github.io/3-column-card-solution/">
       Live URL
     </a>
   <span> ~||~ </span>    <a target='_blank' href="https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-">
