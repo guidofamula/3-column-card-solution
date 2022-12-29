@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: hsl(0deg, 0%, 95%);
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card-1 {
+  background-color: hsl(31deg, 77%, 52%);
+}
+
+.card-2 {
+  background-color: hsl(184deg, 100%, 22%);
+}
+
+.card-3 {
+  background-color: hsl(179deg, 100%, 13%);
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  padding: 40px;
+}
+
+.sedans-info h1,
+.suvs-info h1,
+.luxury-info h1 {
+  margin-top: 20px;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 38px;
+  color: hsl(0deg, 0%, 95%);
+  letter-spacing: 2px;
+}
+
+.sedans-info p,
+.suvs-info p,
+.luxury-info p {
+  margin-top: 20px;
+  font-size: 15px;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  opacity: 0.8;
+}
+
+button {
+  background-color: hsl(0deg, 0%, 95%);
+  padding: 13px 25px 13px;
+  margin-top: 20px;
+  border: solid 2px hsl(0deg, 0%, 95%);
+  border-radius: 30px;
+  cursor: pointer;
+}
+button a {
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+button:hover {
+  border: hsl(0deg, 0%, 95%) solid 2px;
+}
+button:hover a {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+.sedans-info button:hover {
+  background-color: hsl(31deg, 77%, 52%);
+}
+
+.suvs-info button:hover {
+  background-color: hsl(184deg, 100%, 22%);
+}
+
+.luxury-info button:hover {
+  background-color: hsl(179deg, 100%, 13%);
+}
+
+.sedans-info a {
+  color: hsl(31deg, 77%, 52%);
+}
+
+.suvs-info a {
+  color: hsl(184deg, 100%, 22%);
+}
+
+.luxury-info a {
+  color: hsl(179deg, 100%, 13%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(184deg, 100%, 22%);
+}
+
+@media (max-width: 428px) {
+  .card-container {
+    margin: 20px;
+    margin-top: 100px;
+  }
+  .card-1 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .card-3 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .sedans-info h1,
+.suvs-info h1,
+.luxury-info h1 {
+    font-size: 32px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+  .card-container {
+    display: flex;
+    align-content: center;
+    margin: 100px;
+    padding: 0 200px 0;
+  }
+  button {
+    margin-top: 40px;
+  }
+  .card-1 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .card-3 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}/*# sourceMappingURL=styles.css.map */

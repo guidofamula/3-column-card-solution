@@ -1,0 +1,187 @@
+@import 'config';
+
+// Start scss
+#content {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: $light-gray;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin backgroundColor($color) {
+  background-color: $color;
+}
+
+.card-1 {
+  @include backgroundColor($orange);
+}
+
+.card-2 {
+  @include backgroundColor($cyan);
+}
+
+.card-3 {
+  @include backgroundColor($dark-cyan);
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  padding: 40px;
+}
+
+.sedans-info,
+.suvs-info,
+.luxury-info {
+  h1 {
+    margin-top: 20px;
+    font-family: $fontDisplay;
+    font-size: 38px;
+    color: $light-gray;
+    letter-spacing: 2px;
+  }
+}
+
+.sedans-info,
+.suvs-info,
+.luxury-info {
+  p {
+    margin-top: 20px;
+    font-size: $font-body;
+    color: $white;
+    opacity: 0.8;
+  }
+}
+
+@mixin button-core($backColor, $mt, $roundedPx) {
+  background-color: $backColor;
+  padding: 13px 25px 13px;
+  margin-top: $mt;
+  border: solid 2px $backColor;
+  border-radius: $roundedPx;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    margin: 0 auto;
+  }
+}
+
+button {
+  @include button-core($light-gray, 20px, 30px);
+}
+
+button:hover {
+  border: $light-gray solid 2px;
+  a {
+    color: $white;
+  }
+}
+
+@mixin button-hover($color) {
+  button:hover {
+    background-color: $color;
+  }
+}
+
+.sedans-info {
+  @include button-hover($orange);
+}
+
+.suvs-info {
+  @include button-hover($cyan);
+}
+
+.luxury-info {
+  @include button-hover($dark-cyan);
+}
+
+.sedans-info {
+  a {
+    color: $orange;
+  }
+}
+
+.suvs-info {
+  a {
+    color: $cyan;
+  }
+}
+
+.luxury-info {
+  a {
+    color: $dark-cyan;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: $cyan;
+}
+
+// Start with mobile version
+@media (max-width: $mobile) {
+  .card-container {
+    margin: 20px;
+    margin-top: 100px;
+  }
+
+  .card-1 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .card-3 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .sedans-info,
+  .suvs-info,
+  .luxury-info {
+    h1 {
+      font-size: 32px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .card-container {
+    display: flex;
+    align-content: center;
+    margin: 100px;
+    padding: 0 200px 0;
+  }
+
+  button {
+    margin-top: 40px;
+  }
+
+  .card-1 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .card-3 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+@media (max-width: $desktop) {
+  .container {
+    max-width: $desktop;
+  }
+}
